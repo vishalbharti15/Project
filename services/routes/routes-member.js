@@ -16,7 +16,7 @@ module.exports = function(member){
 
     member.route('/forgot').get(controller.forgotView)
 
-    member.route("/index").get(controller.index)
+    member.route('/index').get(controller.index)
 
     member.route('/sendpassword').post(controller.sendPassword)
 
