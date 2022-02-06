@@ -63,6 +63,10 @@ var controller ={
         res.render("member-login", { title: "Member Login Page" })
     },
 
+    index: function (req, res) {
+        res.render("member-home", { title: "Member Home Page", userData: currloginUser })
+    },
+
     forgotView: function (req, res) {
         res.render("member-forgot-password", { title: "Member Forgot Password Page" })
     },
