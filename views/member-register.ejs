@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Member Registration Page</title>
+    </head>
+
+    <body>
+        <center>
+            <form action="/member/member-registered" method="post">
+              <div class="login">
+                <h1>Register New Member</h1>
+                <input type="text" name="name" placeholder="Enter Name" required="required" />
+                <input type="email" name="email" placeholder="Enter Email" required="required" />
+                <input type="text" name="password" placeholder="Set Password" required="required" />
+                <input type="number" name="age" placeholder="Enter Age" required="required" />
+                <input type="date" name="dob" placeholder="Enter DOB" required="required" />
+                <input type="text" name="address" placeholder="Enter Address" required="required" />
+                <input type="number" name="pincode" placeholder="Enter Pin Code" required="required" />
+                <input type="number" name="mobile" placeholder="Enter Phone Number" required="required" />
+                <button class="btnRegister" type="submit">Register</button>
+              </div>  
+            </form>
+        </center>
+    </body>
+
+    <style>
+      html {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Open Sans', sans-serif;
+        background: steelblue;
+  }
+      .login {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        margin: -150px 0 0 -150px;
+        width: 20%;
+        height: 300px;
+      }
+      .login h1 {
+        color: #fff;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        letter-spacing: 1px;
+        text-align: center;
+      }
+      body h1 {
+        color: #fff;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        letter-spacing: 1px;
+      }
+      .index a {
+        color: blue;
+        background: white;
+        font-size: 18px
+      }
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 13px;
+        color: #fff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+        -webkit-transition: box-shadow .5s ease;
+        -moz-transition: box-shadow .5s ease;
+        -o-transition: box-shadow .5s ease;
+        -ms-transition: box-shadow .5s ease;
+        transition: box-shadow .5s ease;
+      }
+      input:focus {
+        box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+      }
+      .btnRegister {
+        background-color: #6eb6de;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 13px;
+        width: 107%;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      label {
+        color: white;
+      }
+    </style>
+</html>

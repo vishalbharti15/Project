@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title><%= title %></title>
+</head>
+
+<body>
+
+    <h1>Hi!! You are in Admin Home Page</h1>
+
+    <button class="btnAction" id="logout" onclick="window.location.href = '/admin/logout';">
+        Logout
+    </button>
+
+    <button class="btnAction" id="viewMembers" onclick="window.location.href = 'viewallmembers';">
+        View All Members
+    </button>
+
+    <button class="btnAction" id="viewAds" onclick="window.location.href = 'viewallads';">
+        View All Ads
+    </button>
+
+</body>
+
+
+<style>
+    h1 {
+        background: cornsilk;
+        font-family: -webkit-pictograph;
+        text-align: center;
+        height: 50px;
+        width : 100%;
+    }
+    h2 {
+        color: beige;
+        font-family: cursive;
+        font-size: 30px;
+    }
+    a {
+        color: royalblue;
+        float: right;
+        margin-right: 25px;
+        margin-top: -114px;
+        font-size: 20px;
+    }
+    html {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Open Sans', sans-serif;
+        background: steelblue;
+    }
+    .btnAction {
+        background-color: brown;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 13px;
+        cursor: pointer;
+    }
+    #logout {
+        float: right;
+        margin-top: -139px;
+        height: 45px;
+        border-radius: 35px;
+        background-color: brown;
+        font-weight: 700;
+    }    
+    #viewMembers {
+        background-color: brown;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 13px;
+        cursor: pointer;
+        font-weight: 800;
+    }
+    #viewAds {
+        background-color: brown;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 13px;
+        cursor: pointer;
+        font-weight: 800;
+    }
+</style>
+
+</html>
